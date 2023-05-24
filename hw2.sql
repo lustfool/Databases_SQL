@@ -3,8 +3,8 @@
 CREATE TABLE sales
 (
 	id SERIAL PRIMARY KEY,
-    order_date DATE NOT NULL,
-    count_product INT NOT NULL
+ 	order_date DATE NOT NULL,
+	count_product INT NOT NULL
 );
 INSERT INTO sales (order_date, count_product)
 VALUES
@@ -33,9 +33,9 @@ FROM sales;
 CREATE TABLE orders
 (
 	id SERIAL PRIMARY KEY,
-    employee_id VARCHAR(5) NOT NULL,
-    amount DECIMAL(6,2) NOT NULL,
-    order_status VARCHAR(10) NOT NULL
+   	employee_id VARCHAR(5) NOT NULL,
+    	amount DECIMAL(6,2) NOT NULL,
+    	order_status VARCHAR(10) NOT NULL
 );
 INSERT INTO orders (employee_id, amount, order_status)
 VALUES
