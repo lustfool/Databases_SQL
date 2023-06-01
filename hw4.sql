@@ -220,7 +220,7 @@ WHERE user_id IN (
 
 SELECT 
 	gender AS 'Пол', 
-	COUNT(*) as 'Кол-во лайков'
+	COUNT(*) as 'Количество лайков'
 FROM profiles p 
 JOIN likes l 
 WHERE l.user_id = p.user_id
