@@ -4,16 +4,16 @@
 CREATE OR REPLACE VIEW info AS
 SELECT
 	firstname,
-    lastname,
-    hometown,
-    gender
+    	lastname,
+    	hometown,
+    	gender
 FROM users
 JOIN profiles ON users.id = profiles.user_id
 WHERE TIMESTAMPDIFF(YEAR, birthday, NOW()) < 20;
 
 SELECT * FROM info;
 
-/* Найдите кол-во, отправленных сообщений каждым пользователем и выведите
+/* 2. Найдите кол-во, отправленных сообщений каждым пользователем и выведите
 ранжированный список пользователей, указав имя и фамилию пользователя, количество
 отправленных сообщений и место в рейтинге (первое место у пользователя с максимальным
 количеством сообщений) . (используйте DENSE_RANK) */
