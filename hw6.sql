@@ -6,9 +6,9 @@ users в таблицу users_old. (использование транзакц�
 DROP TABLE IF EXISTS users_old;
 CREATE TABLE users_old (
 	id SERIAL PRIMARY KEY, 
-    firstname varchar(50), 
-    lastname varchar(50), 
-    email varchar(120)
+    	firstname varchar(50), 
+   	lastname varchar(50), 
+    	email varchar(120)
 );
 DELIMITER //
 DROP PROCEDURE IF EXISTS to_users_old;
